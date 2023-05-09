@@ -1,0 +1,302 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    background-color: #000;
+}
+
+nav #logo {
+    width: 150px
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#menuitems {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav img {
+    width: 32px;
+    cursor: pointer;
+}
+
+#cart {
+    position: relative;
+}
+
+#qty {
+    position: absolute;
+    background-color: #cc0404;
+    color: #fff;
+    min-width: 21px;
+    border-radius: 50%;
+    padding: 2px;
+    text-align: center;
+    top: 25px;
+    right: 35px;
+    font-size: 15px;
+}
+
+#menu-icon {
+    display: none;
+}
+
+footer {
+    background-color: #cc0404;
+    padding-top: 45px;
+    margin-top: auto;
+}
+
+.foots-container {
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer .foots-container div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.foot4 {
+    width: 17%;
+}
+
+footer div a, footer div p {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fcf7ffcb;
+}
+
+footer div h3 {
+    color: #FCF7FF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+footer div a {
+    margin-top: 5px;
+    padding: 3px;
+}
+
+footer .pFooter {
+    padding-top: 6px;
+    margin-left: 5px;
+}
+
+footer .foot1 p {
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.copyrights {
+    background-color: #cc0404;
+    color: #fcf7ffcb;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.text-row {
+    width: 0px;
+    height: 0px;
+}
+
+footer .foot2 p {
+    padding: 3px; 
+    margin-top: 15px;
+}
+
+footer .foot4 a {
+    text-align: left; 
+    margin-top: 5px; 
+    display: flex;
+}
+
+.row2 {
+    width: 623px; 
+    height: 302px;
+    margin-top: 50px;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+#menuitems {
+    display: flex;
+    float: right;
+}
+
+.container2 {
+    max-width: 1080px;
+    margin-left: 150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+}
+
+.foot1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/*----------media query for menu----------*/
+
+@media only screen and (max-width: 800px) {
+    #menuitems {
+        left: 0%;
+        background: linear-gradient(to bottom, #000, #cc0404);
+        width: 100%;
+        height: 0%;
+        overflow: hidden;
+        transition: 0.5s;
+        padding: 0px;
+        top: 45px;
+        margin-top: 16px;
+        display: block;
+        position: fixed;
+        z-index: 200;
+    }
+
+    #menuitems.active  {
+        height: 100%;
+    }
+
+    #menuitems li {
+        display: block;
+        line-height: 50px;
+        margin-top: 25px;
+        margin-bottom: 30px;
+        color: #FCF7FF;
+        text-align: center;
+    }
+
+    #menuitems li a {
+        color: #FCF7FF;
+        font-size: 20px;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    #qty {
+        right: 85px;
+    }
+
+    nav form {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    footer .foots-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .foots-container div {
+        width: 100%;
+        align-items: center;
+    }
+
+    footer .foot1 img {
+        margin-top: 15px;
+        display: block;
+    }
+
+    footer .foot4 .social-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer div .social-account {
+        display: none;
+    }
+
+    footer div h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer .foots-container .foot1 p {
+        width: 360%;
+    }
+
+    footer div a {
+        margin-top: 6px;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .foot1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foot2 {
+        margin-bottom: 20px;
+    }
+
+    .foot3 {
+        margin-bottom: 20px;
+    }
+
+    .foot4 {
+        margin-right: 0px;
+        margin-bottom: 32px;
+    }
+
+    .foot4 a p {
+        margin: 0px;
+        margin-top: 1px;
+        padding: 0px;
+    }
+}

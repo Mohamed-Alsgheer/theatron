@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	background-color: rgb(88, 88, 88);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	font-family: Arial, sans-serif;
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav" 
+    "side side cont cont cont cont cont cont cont cont cont cont cont cont cont cont"
+    "foot foot foot foot foot foot foot foot foot foot foot foot foot foot foot foot";
+}
+
+nav {
+    grid-area: nav;
+}
+
+.searchbar {
+	display: flex; 
+	margin-left: 55px;
+}
+
+footer {
+    grid-area: foot;
+}
+
+main {
+	margin: 20px;
+	grid-area: cont;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: larger;
+}
+
+aside {
+	background: linear-gradient(to bottom, #000, #cc0404);
+	padding: 20px;
+	grid-area: side;
+	min-width: 80px;
+	font-size: larger;
+}
+aside p {
+color: white;
+}
+
+aside ul {
+list-style: none;
+padding: 0px;
+margin: 0px;
+}
+
+aside li {
+padding: 4px;
+margin-bottom: 10px;
+}
+
+aside li a i {
+width: 15%;
+vertical-align: middle;
+margin-right: 10px;
+}
+aside li a {
+display: block;
+padding: 5px;
+background-color: #fff;
+transition: 0.3s;
+min-width: 35px;
+color: #333;
+text-decoration: none;
+border-radius: 5px;
+}
+
+aside li a:hover {
+background-color: #333;
+color: #fff;
+}
+
+table {
+	border-collapse: collapse;
+	color: white;
+	min-width: 80%;
+	height: max-content;
+	table-layout: auto;
+}
+
+th, td {
+	padding: 10px;
+	text-align: center;
+}
+
+th {
+	background: #cc0404;
+	color: #FFF;
+}
+tr:nth-child(even) {
+	background-color:#4b5053;
+}
+tr:nth-child(odd) {
+	background-color: #333;
+}
+
+tbody tr td:first-child {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+tbody tr td:last-child {
+	min-width: 80px;
+}
+
+td a {
+	color: #fff;
+}
+
+table img {
+	max-width: 100%;
+	max-height: 100px;
+}
+
+button {
+	background-color: #801a1a;
+	color: #FFF;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #555;
+}
+
+@media only screen and (max-width: 1300px) {
+    aside h3 {
+        display: none;
+    }
+
+    aside ul li span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+	table img {
+		display: none;
+	}
+
+	tbody tr td:first-child {
+		display: table-cell;
+	}
+
+	.searchbar {
+	  display: none;
+	}
+}

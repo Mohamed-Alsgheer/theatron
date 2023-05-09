@@ -1,0 +1,62 @@
+[
+    {
+        "userID": "user_6445ac3d45691",
+        "cart": [
+            {
+                "id": 13,
+                "title": "The Phantom of the Opera",
+                "image": "..\/images\/plays_img\/Phantom_of_the_Opera.jpg",
+                "price": 90,
+                "date": "2023-06-30",
+                "tickets": 1,
+                "total": 90
+            },
+            {
+                "id": 10,
+                "title": "Hamilton",
+                "image": "..\/images\/plays_img\/Hamilton.png",
+                "price": 70,
+                "date": "2023-06-15",
+                "tickets": 1,
+                "total": 70
+            }
+        ]
+    },
+    {
+        "userID": "user_645a6318757de",
+        "cart": {
+            "1": {
+                "id": 13,
+                "title": "The Phantom of the Opera",
+                "image": "..\/images\/plays_img\/Phantom_of_the_Opera.jpg",
+                "price": 90,
+                "date": "2023-06-30",
+                "tickets": 1,
+                "total": 90
+            }
+        }
+    },
+    {
+        "userID": "user_6445ac3d45691",
+        "cart": [
+            {
+                "id": 2,
+                "title": "Hamlet",
+                "image": "..\/images\/plays_img\/Hamlet.jpg",
+                "price": 70,
+                "date": "2023-05-05",
+                "tickets": 1,
+                "total": 70
+            },
+            {
+                "id": 5,
+                "title": "Les Mis\u00e9rables",
+                "image": "..\/images\/plays_img\/Les_Miserables.jpg",
+                "price": 70,
+                "date": "2023-05-20",
+                "tickets": 1,
+                "total": 70
+            }
+        ]
+    }
+]

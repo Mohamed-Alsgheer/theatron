@@ -1,0 +1,58 @@
+[
+    {
+        "id": "user_64459db52d29e",
+        "username": "momo",
+        "email": "test500@gmail.com",
+        "password": "$2y$10$MKaijyciCehteBhBvebBGOEy1IVoGD6Sk1m6Nx5blv95qI\/yYrjR.",
+        "role": "vendor"
+    },
+    {
+        "id": "user_6445ac3d45691",
+        "username": "mohamed",
+        "email": "mohamedalsgher2004@gmail.com",
+        "password": "$2y$10$d.oH6JDxyJkk1mcoWb1SQuLfI0NnBMT4rDf2twtQfCdykrcDJbpiO",
+        "role": "user"
+    },
+    {
+        "id": "user_6445ad9ed6334",
+        "username": "test2",
+        "email": "test2@test.com",
+        "password": "$2y$10$nvpqJtDDvRepdBNn9Jh2HuQVRGRn2tx8yQGpV46QSGE0iRbf48UUm",
+        "role": "user"
+    },
+    {
+        "id": "user_6445af841d290",
+        "username": "test3",
+        "email": "test3@test.com",
+        "password": "$2y$10$camxYTBX8Tac\/va1cIrkru1qiYk5gP.y6dBbyofwi.Diw5Aocotg.",
+        "role": "user"
+    },
+    {
+        "id": "user_6445afc185b20",
+        "username": "test4",
+        "email": "test4@test.com",
+        "password": "$2y$10$N804f0.8hTA\/3kaRtUwajusJX7M3udYYsleq9o33EvBDFALBfFQJC",
+        "role": "user"
+    },
+    {
+        "id": "user_6445b0011b5a9",
+        "username": "test5",
+        "email": "test501@gmail.com",
+        "password": "$2y$10$oDFSLKJzRVmTwflebYy77uCIZykIhns60lSgcNtlVGwNEgi.KUIFS",
+        "role": "user"
+    },
+    {
+        "id": "user_6458a272cc8e4",
+        "username": "test",
+        "email": "test@test.com",
+        "password": "$2y$10$6uQ3Kcq5apt69KABHA7F2ehnv4pDHmMGvIn\/YnRzxA0BeVfHxcRaS",
+        "role": "user"
+    },
+    {
+        "id": "user_645a6318757de",
+        "username": "mohamed_alsgheer",
+        "email": "mohamedalsgher2005@gmail.com",
+        "password": "$2y$10$yF6pBfL.kst6aH5F2fl0jelRtZXHHBBQzbLXT.xC8Vzh8yJTTKaYy",
+        "role": "user"
+    }
+]
