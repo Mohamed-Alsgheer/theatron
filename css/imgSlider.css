@@ -98,4 +98,8 @@
     .slide-controls #prev, .slide-controls #next {
         display: none;
     }
+    
+    .slider-container .img-slider img {
+        object-fit: fill;
+    }
 }
