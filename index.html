@@ -29,15 +29,6 @@
             <div>
             <a href="./html/cart.php">
                 <img src="./images/cinema.png" id="cart" />
-                <?php 
-                    if(isset($_SESSION['user'])) {
-                        if(isset($_SESSION['totalTickets'])) {
-                            echo '<span id="qty" style="min-width: 18px;">' . $_SESSION['totalTickets'] . '</span>';
-                        } else {
-                            echo '<span id="qty" style="min-width: 18px;">0</span>';
-                        }
-                    }
-                ?>
             </a>
                 <img src="./images/menu.png" id="menu-icon">
             </div>
@@ -100,7 +91,7 @@
             <!--Drama-->
             <div class="title-div" style="display: flex; justify-content: space-between; align-items: center;">
                 <h2>Drama Theatre</h2>
-                <a href="./images/genre.php?type=Drama" class="more">
+                <a href="./html/genre.php?type=Drama" class="more">
                     <p class="show">Show more</p>
                     <i class="fa-solid fa-angle-right" style="color: #807373;"></i>
                 </a>
@@ -127,7 +118,7 @@
             <!--Comedy-->
             <div class="title-div" style="display: flex; justify-content: space-between; align-items: center;">
                 <h2>Comedy Theatre</h2>
-                <a href="./images/genre.php?type=Comedy" class="more">
+                <a href="./html/genre.php?type=Comedy" class="more">
                     <p class="show">Show more</p>
                     <i class="fa-solid fa-angle-right" style="color: #807373;"></i>
                 </a>
@@ -154,7 +145,7 @@
             <!--Musical-->
             <div class="title-div" style="display: flex; justify-content: space-between; align-items: center;">
                 <h2>Musical Theatre</h2>
-                <a href="./images/genre.php?type=Musical" class="more">
+                <a href="./html/genre.php?type=Musical" class="more">
                     <p class="show">Show more</p>
                     <i class="fa-solid fa-angle-right" style="color: #807373;"></i>
                 </a>
