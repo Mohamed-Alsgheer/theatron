@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,11 +25,25 @@
                 <li><a href="./index.php">Home</a></li>
                 <li><a href="./html/aboutus.php">About</a></li>
                 <li><a href="./html/FAQ.php">FAQ</a></li>
+                <?php if(isset($_SESSION['user'])) { ?>
+                <li><a href="./html/profile.php">Profile</a></li>
+                <li><a href="./backend/logout.php">LogOut</a></li>
+                <?php } else { ?>
                 <li><a href="./html/account.php">Account</a></li>
+                <?php } ?>
             </ul>
             <div>
             <a href="./html/cart.php">
                 <img src="./images/cinema.png" id="cart" />
+                <?php 
+                    if(isset($_SESSION['user'])) {
+                        if(isset($_SESSION['totalTickets'])) {
+                            echo '<span id="qty" style="min-width: 18px;">' . $_SESSION['totalTickets'] . '</span>';
+                        } else {
+                            echo '<span id="qty" style="min-width: 18px;">0</span>';
+                        }
+                    }
+                ?>
             </a>
                 <img src="./images/menu.png" id="menu-icon">
             </div>
