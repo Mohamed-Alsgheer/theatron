@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    width:100%;
+    height:65px;
+    padding:0 55px;
+    display: inline-block;
+    background-color:rgba(0,0,0,0.3);
+    
+}
+
+.searchbar {
+    display: flex; 
+    margin-left: 55px;
+}
+
+body{
+    width:100%;
+    color:white;
+    text-transform: capitalize;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-areas: 
+        "nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav" 
+        "side side cont cont cont cont cont cont cont cont cont cont cont cont cont cont"
+        "foot foot foot foot foot foot foot foot foot foot foot foot foot foot foot foot";
+}
+
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: foot;
+}
+
+aside {
+    font-size: larger;
+    background: linear-gradient(to bottom, #000, #cc0404);
+    padding: 20px;
+    grid-area: side;
+    min-width: 80px;
+}
+aside p {
+color: white;
+}
+
+aside ul {
+list-style: none;
+}
+
+aside li {
+padding: 4px;
+margin-bottom: 10px;
+}
+
+aside li a i {
+width: 15%;
+vertical-align: middle;
+margin-right: 10px;
+}
+aside li a {
+display: block;
+padding: 5px;
+background-color: #fff;
+transition: 0.3s;
+min-width: 35px;
+color: #333;
+text-decoration: none;
+border-radius: 5px;
+}
+
+aside li a:hover {
+background-color: #333;
+color: #fff;
+}
+
+main {
+    grid-area: cont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    background-image: linear-gradient(to bottom, #000, #cc0404);
+}
+
+.container{
+    width:100%;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius:10px ;
+    padding:18px; 
+    margin: 0px 30px;
+    box-shadow:rgb(237, 109, 109) 2px -2px 2px;
+    
+    
+}
+.name-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.name-container span input {
+    margin: 10px 0px;
+}
+.pl{
+    border-radius: 5px;
+    padding-left:10px;
+    margin: 10px 0px;
+}
+.ty{
+    text-transform: capitalize;
+    
+}
+.type{
+    display:block;
+    margin-top: 20px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    
+}
+.tex{
+    margin: 40px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+
+}
+.num{
+    margin: 20px 0px;
+    
+}
+.num span p {
+    display: inline-block;
+}
+.set{
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.pri{
+    border-radius: 5px;
+    padding-left:10px;
+}
+.addd{
+    background-color: #cc0404;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    min-width: fit-content;
+    font-weight: bold;
+    text-align: center;
+    width:100px;
+    padding :15px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property:box-shadow, transform;
+    transition-property:box-shadow, transform ;
+    
+}
+.addd:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+    -webkit-transform: scale(1.1);
+    transform:scale(1.1);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 25px;
+    margin:0px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+.navbar li{
+    margin:0px 20px;
+    
+}
+.navbar ul a{
+    color:white;
+}
+.navbar ul a:hover{
+    color:#cc0404;
+}
+.date{
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+input {
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+    aside h3 {
+        display: none;
+    }
+
+    aside ul li span {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    .name-container {
+        flex-direction: column;
+    }
+
+    main {
+        height: auto;
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .searchbar {
+      display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .name-container div, .name-container span input, .pl {
+        width: 100%;
+    }
+}

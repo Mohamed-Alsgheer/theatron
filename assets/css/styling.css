@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(to bottom,rgb(147, 16, 16),rgb(148, 17, 17));;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: fixed;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-areas: 
+  "nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav nav" 
+  "side side cont cont cont cont cont cont cont cont cont cont cont cont cont cont"
+  "foot foot foot foot foot foot foot foot foot foot foot foot foot foot foot foot";
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: foot;
+}
+
+main {
+  grid-area: cont;
+}
+
+.searchbar {
+  display: flex; 
+  margin-left: 55px;
+}
+
+aside {
+  background: linear-gradient(to bottom, #000, #cc0404);
+  padding: 20px;
+  grid-area: side;
+  min-width: 80px;
+  font-size: larger;
+}
+aside p {
+  color: white;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+aside li a i {
+  width: 15%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+aside li a {
+  display: block;
+  padding: 5px;
+  background-color: #fff;
+  transition: 0.3s;
+  min-width: 35px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+aside li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.all {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.photo {
+  width: 380px;
+  background-color: rgb(213, 5, 5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px rgba(208, 219, 208, 0.3);
+  border-style: solid;
+  border-color: rgb(30, 30, 30);
+  border-width: 30px;
+  margin-right: 20px;
+}
+
+.photo img {
+  width: -webkit-fill-available;
+}
+
+.heading {
+  height: 45px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding-left: 550px;
+  padding-top: 15px;
+  color: rgb(246, 246, 246);
+  font-size: 40px;
+  font-weight: 100;
+}
+.det {
+  max-width: 700px;
+  transition: 0.5s;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  box-shadow: 0 0 5px 5px rgba(233, 237, 228, 0.3);
+}
+.det h2 {
+  color: #fff;
+}
+.det:hover {
+  translate: 30px;
+  background-color: rgb(124, 23, 23);
+  cursor: pointer;
+}
+.genre {
+  margin-top: 17px;
+}
+h2 {
+  color: black;
+}
+.det span {
+  font-weight: 100;
+  font-size: large;
+  color: white;
+}
+.description {
+  margin-top: 17px;
+}
+p {
+  font-size: large;
+  color: white;
+}
+.place {
+  margin-top: 17px;
+}
+.ticket {
+  margin-top: 17px;
+}
+.revenue {
+  margin-top: 17px;
+}
+.seats {
+  margin-top: 17px;
+}
+.income {
+  margin-top: 17px;
+}
+
+.bt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  background:#000;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: #fff;
+  font-size: large;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.bt:hover{
+background: #ff0505;
+letter-spacing: 1px ;
+}
+
+@media only screen and (max-width: 1300px) {
+  aside {
+    width: 80px;
+  }
+
+  aside h3 {
+    display: none;
+  }
+
+  aside ul li span {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .all {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .photo {
+    width: -webkit-fill-available;
+    margin: 0px;
+  }
+
+  .photo img {
+    width: inherit;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .btn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchbar {
+    display: none;
+  }
+}
+
